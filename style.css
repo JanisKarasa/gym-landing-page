@@ -1,0 +1,447 @@
+@font-face {
+  font-family: "Hellix";
+  src: url("font/Hellix-Medium.eot");
+  src: local("font/Hellix Medium"), local("Hellix-Medium"),
+    url("font/Hellix-Medium.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  min-width: 100%;
+  min-height: 100vh;
+  font-family: Hellix;
+  background-color: #e5e5e5;
+  color: #111235;
+}
+
+h1,
+h2,
+h3,
+h6 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 64px;
+  margin: 15px 0;
+}
+
+h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+h6 {
+  font-size: 18px;
+  margin: 0 0 40px;
+}
+
+p {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.all-container {
+  max-width: 414px;
+  margin: 0px auto;
+  background: linear-gradient(7.28deg, #eef5ff 0%, #ffffff 99.69%);
+}
+
+.title {
+  height: 75px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04),
+    0px 0px 1px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-menu-mobile {
+  display: none;
+}
+
+.header-bold {
+  font-weight: 700;
+}
+
+.title-plain {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-section-container {
+  padding: 40px 16px;
+}
+
+.footer {
+  padding: 25px 16px;
+}
+
+.footer p {
+  margin-bottom: 35px;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.content-section-container > img {
+  width: 100%;
+}
+
+.btn {
+  text-decoration: none;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  border-radius: 50px;
+  margin: 30px auto;
+  font-weight: 600;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #4b5092;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #436baa;
+}
+
+.blue-bg {
+  background-color: #f2f8ff;
+}
+
+.linear-bg {
+  background: linear-gradient(99.85deg, #bad5ff 0%, #6487bf 100%);
+}
+
+.desktop-only {
+  display: none;
+}
+
+.card-blue {
+  background-color: #e4f0ff;
+}
+
+.card-purple {
+  background-color: rgba(114, 122, 239, 0.1);
+}
+
+.linear-bg img {
+  display: block;
+}
+
+.card {
+  margin-top: 20px;
+  border-radius: 30px;
+  width: 382px;
+  height: 274px;
+}
+
+.card > h5 {
+  padding: 50px 108px 20px 40px;
+}
+
+.card > p {
+  padding: 0 54px 50px 42px;
+}
+
+.footer > a {
+  text-decoration: none;
+  color: #111235;
+}
+
+input[type="text"] {
+  width: 55%;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: 400;
+  font-family: Hellix;
+  background: url("https://assets.codepen.io/6060109/icon-send.png") white 95%
+    50% no-repeat;
+}
+
+input::placeholder {
+  color: #111235;
+}
+
+.icons {
+  margin: 25px auto;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-circle a {
+  background: rgba(128, 173, 245, 0.2);
+  height: 32px;
+  width: 32px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#copyright {
+  padding: 60px 0;
+}
+
+/* Modifier classes -- single style */
+
+.tp-80 {
+  padding-top: 80px;
+}
+
+.bp-100 {
+  padding-bottom: 100px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.top-border {
+  border-top: 1px solid grey;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    background: linear-gradient(7.28deg, #eef5ff 0%, #ffffff 99.69%);
+  }
+
+  .all-container {
+    max-width: 1385px;
+  }
+
+  .title {
+    height: 75px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-shadow: none;
+    margin-left: 135px;
+    margin-right: 150px;
+  }
+
+  .title-menu-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .title-menu-mobile a {
+    text-decoration: none;
+    color: #111235;
+  }
+
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-left: 135px;
+    margin-right: 64px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-section img {
+    width: 45%;
+  }
+
+  .hero-text {
+    width: 50%;
+    text-align: left;
+  }
+
+  .hero-text .btn {
+    margin-left: 0;
+  }
+
+  .left-to-right {
+    display: flex;
+    margin-left: 146px;
+    margin-right: 107px;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .workout-img-2 {
+    width: 50%;
+    padding: 0;
+  }
+
+  .blue-bg {
+    width: 45%;
+    border-radius: 50px;
+  }
+
+  .blue-bg h2 {
+    margin-right: 163px;
+    margin-left: 47px;
+    margin-bottom: 20px;
+  }
+
+  .blue-bg p {
+    margin-right: 55px;
+    margin-left: 47px;
+  }
+
+  .blue-bg .content-section-container {
+    padding: 0;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .linear-bg {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .linear-bg img {
+    width: 450px;
+  }
+
+  .trainer-text {
+    text-align: left;
+    width: 30%;
+    margin-left: 40px;
+  }
+
+  .trainer-text a {
+    margin-left: 0;
+  }
+
+  /* Modifier classes -- single style */
+  .ml-45 {
+    margin-left: 45px;
+  }
+
+  .bottom-container {
+    margin-left: 135px;
+    margin-right: 82px;
+  }
+
+  .content-section-container {
+    padding: 40px 0px;
+    margin-bottom: 50px;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+  .desktop-only {
+    display: block;
+  }
+
+  .combined {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .combined > * {
+    margin: 0;
+  }
+
+  .panels-img-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .panels-img-container img {
+    width: 30%;
+  }
+
+  .panels {
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card {
+    width: 48%;
+  }
+
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer {
+    padding: 0px;
+    padding-top: 15px;
+    display: flex;
+    width: 30%;
+    text-align: left;
+    justify-content: space-around;
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: #111235;
+  }
+  .footer p {
+    margin-bottom: 15px;
+  }
+
+  .email-form {
+    padding-top: 10px;
+    width: 30%;
+    text-align: left;
+  }
+
+  .email-form input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #copyright {
+    text-align: left;
+    padding: 0;
+    margin-top: -20px;
+  }
+}
+
+/* Project is finished but there is some final touches like 4 cubes which are stearching and shrinking wrong with the text */
